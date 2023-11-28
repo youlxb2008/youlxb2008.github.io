@@ -59,8 +59,6 @@
     
       <a class="main-nav-link" href="/">首页</a>
     
-      <a class="main-nav-link" href="/archives/front/">test</a>
-    
       <a class="main-nav-link" href="/archives">文章</a>
     
       <a class="main-nav-link" href="/about">关于</a>
@@ -88,8 +86,6 @@
   <div id="dropdown-link-list">
     
       <a class="nav-dropdown-link" href="/">首页</a>
-    
-      <a class="nav-dropdown-link" href="/archives/front/">test</a>
     
       <a class="nav-dropdown-link" href="/archives">文章</a>
     
@@ -163,7 +159,7 @@
       
         <a class="archive-link" href="/archives/2023/09 ">
           九月 2023 
-          <div class="archive-count">2 </div>
+          <div class="archive-count">3 </div>
         </a>
       
     </div>
@@ -176,6 +172,12 @@
     <div class="widget">
       <h3 class="widget-title">最新文章</h3>
       <ul>
+        
+          <a class="recent-link" href="/2023/09/18/linux/redisClusterInstall/" title="redis集群搭建" >
+            <div class="recent-link-text">
+              redis集群搭建
+            </div>
+          </a>
         
           <a class="recent-link" href="/2023/09/14/front/eslintAndPrettier/" title="vue eslint和prettier集成" >
             <div class="recent-link-text">
@@ -199,6 +201,71 @@
     </div>
     <div id="content-body">
       
+   
+
+<article id="post-linux/redisClusterInstall" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/2023/09/18/linux/redisClusterInstall/">redis集群搭建</a>
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2023-09-18T08:45:44.000Z" itemprop="datePublished">2023-09-18</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+    未分类 
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            1 词 
+          </div>
+        </div>
+        
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <div class="truncate-text">
+            123123123
+  
+          </div>
+        
+      </div>
+
+         
+    </div>
+    
+     
+    <a class="right-panel  non-pic  "
+      
+      href="/2023/09/18/linux/redisClusterInstall/" 
+    >
+       
+      <i class="fa-solid fa-angle-right non-pic"></i>
+       
+    </a>
+     
+  </div>
+  
+</article>
+
+ 
+
    
 
 <article id="post-front/eslintAndPrettier" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
@@ -231,7 +298,7 @@
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            0 词 
+            947 词 
           </div>
         </div>
         
@@ -241,7 +308,15 @@
       <div class="e-content article-entry" itemprop="articleBody">
         
           <div class="truncate-text">
-              
+            介绍这几天公司前端项目需要做静态代码扫描，去做了一下研究。vue 端主要还是通过 eslint 来实现静态代码扫描，在 vscode 端用 prettier 来做代码保存自动格式化的一个过程。
+eslint: 用于扫描代码，提示一些代码质量上存在的通用性问题。prettier：用于代码格式化，保证多 pc 端多软件之间的代码格式规范化工具。
+项目集成 eslint参考地址为： https://eslint.nodejs.cn/docs/latest/use/getting-started当前版本： v8.50
+在项目根目录下，命令行输入如下命令，可以进入交互式的 init 过程
+1npm init @eslint/config
+
+初始化完成后，根目录下会出现一个.eslintrc.{js,yml,json}文件， 这里建议为 js，可以写注释。
+配置文件参考如下：
+1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859...  
           </div>
         
       </div>
