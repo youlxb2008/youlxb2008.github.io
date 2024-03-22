@@ -2,9 +2,9 @@
 
 
 <html theme="dark" showBanner="true" hasBanner="false" > 
-<link href="/fontawesome/css/fontawesome.css" rel="stylesheet">
-<link href="/fontawesome/css/brands.css" rel="stylesheet">
-<link href="/fontawesome/css/solid.css" rel="stylesheet">
+<link href="https://cdn.staticfile.org/font-awesome/6.4.2/css/fontawesome.min.css" rel="stylesheet">
+<link href="https://cdn.staticfile.org/font-awesome/6.4.2/css/brands.min.css" rel="stylesheet">
+<link href="https://cdn.staticfile.org/font-awesome/6.4.2/css/solid.min.css" rel="stylesheet">
 <script src="/js/color.global.min.js" ></script>
 <script src="/js/load-settings.js" ></script>
 <head>
@@ -48,7 +48,7 @@
 <body>
   
    
-  <div id="main-grid" class="shadow   ">
+  <div id="main-grid" class="  ">
     <div id="nav" class=" is_home "  >
       <navbar id="navbar">
   <nav id="title-nav">
@@ -139,7 +139,12 @@
   <div class="widget-wrap">
     <div class="widget">
       <h3 class="widget-title">分类</h3>
-      <div class="category-box"></div>
+      <div class="category-box">
+            <a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/">
+                前端
+                <div class="category-count">1</div>
+            </a>
+        </div>
     </div>
   </div>
 
@@ -218,6 +223,7 @@
       
    
 
+
 <article id="post-other/get-back-pic" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
    
   <div class="article-inner">
@@ -248,7 +254,7 @@
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            71 词 
+            124 词 
           </div>
         </div>
         
@@ -258,9 +264,10 @@
       <div class="e-content article-entry" itemprop="articleBody">
         
           <div class="truncate-text">
-            如何获取 window 当前桌面的背景图桌面壁纸位于：%APPDATA%\Microsoft\Windows\Themes 下
-其中%APPDATA%是用户特定的环境变量指定的路径，通常是 C:\Users\用户名\AppData\Roaming。可以在 PowerShell 中输入gci env:APPDATA查询当前用户的%APPDATA%路径。
-  
+            
+              如何获取 window 当前桌面的背景图桌面壁纸位于：%APPDATA%\Microsoft\Windows\Themes 下锁屏壁纸位于：%ProgramData%\Microsoft\Windows\SystemData\用户SID\ReadOnly
+
+            
           </div>
         
       </div>
@@ -282,9 +289,13 @@
   
 </article>
 
- 
+
+
+
+
 
    
+
 
 <article id="post-linux/redisClusterInstall" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
    
@@ -324,8 +335,10 @@
       <div class="e-content article-entry" itemprop="articleBody">
         
           <div class="truncate-text">
-            123123123
-  
+            
+              123123123
+
+            
           </div>
         
       </div>
@@ -347,9 +360,13 @@
   
 </article>
 
- 
+
+
+
+
 
    
+
 
 <article id="post-front/eslintAndPrettier" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
    
@@ -391,7 +408,8 @@
       <div class="e-content article-entry" itemprop="articleBody">
         
           <div class="truncate-text">
-            介绍这几天公司前端项目需要做静态代码扫描，去做了一下研究。vue 端主要还是通过 eslint 来实现静态代码扫描，在 vscode 端用 prettier 来做代码保存自动格式化的一个过程。
+            
+              介绍这几天公司前端项目需要做静态代码扫描，去做了一下研究。vue 端主要还是通过 eslint 来实现静态代码扫描，在 vscode 端用 prettier 来做代码保存自动格式化的一个过程。
 eslint: 用于扫描代码，提示一些代码质量上存在的通用性问题。prettier：用于代码格式化，保证多 pc 端多软件之间的代码格式规范化工具。
 项目集成 eslint参考地址为： https://eslint.nodejs.cn/docs/latest/use/getting-started当前版本： v8.50
 在项目根目录下，命令行输入如下命令，可以进入交互式的 init 过程
@@ -399,7 +417,8 @@ eslint: 用于扫描代码，提示一些代码质量上存在的通用性问题
 
 初始化完成后，根目录下会出现一个.eslintrc.{js,yml,json}文件， 这里建议为 js，可以写注释。
 配置文件参考如下：
-1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859...  
+1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859...
+            
           </div>
         
       </div>
@@ -421,9 +440,13 @@ eslint: 用于扫描代码，提示一些代码质量上存在的通用性问题
   
 </article>
 
- 
+
+
+
+
 
    
+
 
 <article id="post-front/vue-docker-template" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
    
@@ -465,13 +488,15 @@ eslint: 用于扫描代码，提示一些代码质量上存在的通用性问题
       <div class="e-content article-entry" itemprop="articleBody">
         
           <div class="truncate-text">
-            docker 模板如下, 主要步骤如下
+            
+              docker 模板如下, 主要步骤如下
 
 用 node14 作为镜像，打包前端文件
 把上一个前端包，打进新的 nginx 镜像中
 
 上述做法 1 点会留下一个无用的打包镜像，需要手动删除
-1234567891011121314151617181920212223242526272829303132333435363738# 使用node.js官方镜像作为基础镜像FROM node:14 as build# 设置淘宝镜像源为npm的默认镜像源RUN npm config set registry https://registry.npm.taobao.org/# 设置淘宝镜像源为yarn的默认镜像源RUN yarn config set registry https://registry.npm.taobao.org/# 设置工作目录WORKDIR /app# 将package.json和yarn.lock文件拷贝到工作目录COPY package*.json yarn.lock ./# 安装依赖RUN yarn install# 将当前目录下的源代码拷贝到工作目录COPY . ....  
+1234567891011121314151617181920212223242526272829303132333435363738# 使用node.js官方镜像作为基础镜像FROM node:14 as build# 设置淘宝镜像源为npm的默认镜像源RUN npm config set registry https://registry.npm.taobao.org/# 设置淘宝镜像源为yarn的默认镜像源RUN yarn config set registry https://registry.npm.taobao.org/# 设置工作目录WORKDIR /app# 将package.json和yarn.lock文件拷贝到工作目录COPY package*.json yarn.lock ./# 安装依赖RUN yarn install# 将当前目录下的源代码拷贝到工作目录COPY . ....
+            
           </div>
         
       </div>
@@ -493,7 +518,10 @@ eslint: 用于扫描代码，提示一些代码质量上存在的通用性问题
   
 </article>
 
- 
+
+
+
+
 
 
 
@@ -503,7 +531,7 @@ eslint: 用于扫描代码，提示一些代码质量上存在的通用性问题
   
   <div id="footer-info" class="inner">
     
-    &copy; 2023 youlxb2008<br>
+    &copy; 2024 youlxb2008<br>
     Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & Theme <a target="_blank" rel="noopener" href="https://github.com/saicaca/hexo-theme-vivia">Vivia</a>
   </div>
 </footer>

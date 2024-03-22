@@ -2,9 +2,9 @@
 
 
 <html theme="dark" showBanner="true" hasBanner="false" > 
-<link href="/fontawesome/css/fontawesome.css" rel="stylesheet">
-<link href="/fontawesome/css/brands.css" rel="stylesheet">
-<link href="/fontawesome/css/solid.css" rel="stylesheet">
+<link href="https://cdn.staticfile.org/font-awesome/6.4.2/css/fontawesome.min.css" rel="stylesheet">
+<link href="https://cdn.staticfile.org/font-awesome/6.4.2/css/brands.min.css" rel="stylesheet">
+<link href="https://cdn.staticfile.org/font-awesome/6.4.2/css/solid.min.css" rel="stylesheet">
 <script src="/js/color.global.min.js" ></script>
 <script src="/js/load-settings.js" ></script>
 <head>
@@ -20,15 +20,15 @@
   <link rel="preload" href="/css/fonts/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="/css/fonts/Roboto-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
-  <meta name="description" content="如何获取 window 当前桌面的背景图桌面壁纸位于：%APPDATA%\Microsoft\Windows\Themes 下 其中%APPDATA%是用户特定的环境变量指定的路径，通常是 C:\Users\用户名\AppData\Roaming。可以在 PowerShell 中输入gci env:APPDATA查询当前用户的%APPDATA%路径。">
+  <meta name="description" content="如何获取 window 当前桌面的背景图桌面壁纸位于：%APPDATA%\Microsoft\Windows\Themes 下锁屏壁纸位于：%ProgramData%\Microsoft\Windows\SystemData\用户SID\ReadOnly">
 <meta property="og:type" content="article">
 <meta property="og:title" content="windows获取当前桌面背景图">
 <meta property="og:url" content="https://youlxb2008.github.io/2023/12/15/other/get-back-pic/index.html">
 <meta property="og:site_name" content="youlxb2008">
-<meta property="og:description" content="如何获取 window 当前桌面的背景图桌面壁纸位于：%APPDATA%\Microsoft\Windows\Themes 下 其中%APPDATA%是用户特定的环境变量指定的路径，通常是 C:\Users\用户名\AppData\Roaming。可以在 PowerShell 中输入gci env:APPDATA查询当前用户的%APPDATA%路径。">
+<meta property="og:description" content="如何获取 window 当前桌面的背景图桌面壁纸位于：%APPDATA%\Microsoft\Windows\Themes 下锁屏壁纸位于：%ProgramData%\Microsoft\Windows\SystemData\用户SID\ReadOnly">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-12-15T05:44:56.000Z">
-<meta property="article:modified_time" content="2023-12-15T06:13:46.278Z">
+<meta property="article:modified_time" content="2023-12-18T01:17:14.631Z">
 <meta property="article:author" content="youlxb2008">
 <meta property="article:tag" content="其他">
 <meta name="twitter:card" content="summary">
@@ -53,7 +53,7 @@
 <body>
   
    
-  <div id="main-grid" class="shadow   ">
+  <div id="main-grid" class="  ">
     <div id="nav" class=""  >
       <navbar id="navbar">
   <nav id="title-nav">
@@ -144,7 +144,12 @@
   <div class="widget-wrap">
     <div class="widget">
       <h3 class="widget-title">分类</h3>
-      <div class="category-box"></div>
+      <div class="category-box">
+            <a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/">
+                前端
+                <div class="category-count">1</div>
+            </a>
+        </div>
     </div>
   </div>
 
@@ -222,6 +227,7 @@
     <div id="content-body">
        
 
+
 <article id="post-other/get-back-pic" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   
     
@@ -254,7 +260,7 @@
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            71 词 
+            124 词 
           </div>
         </div>
         
@@ -263,8 +269,7 @@
       </header>
       <div class="e-content article-entry" itemprop="articleBody">
         
-          <h1 id="如何获取-window-当前桌面的背景图"><a href="#如何获取-window-当前桌面的背景图" class="headerlink" title="如何获取 window 当前桌面的背景图"></a>如何获取 window 当前桌面的背景图</h1><p>桌面壁纸位于：%APPDATA%\Microsoft\Windows\Themes 下</p>
-<p>其中%APPDATA%是用户特定的环境变量指定的路径，通常是 C:\Users\用户名\AppData\Roaming。可以在 PowerShell 中输入<code>gci env:APPDATA</code>查询当前用户的%APPDATA%路径。</p>
+          <h1 id="如何获取-window-当前桌面的背景图"><a href="#如何获取-window-当前桌面的背景图" class="headerlink" title="如何获取 window 当前桌面的背景图"></a>如何获取 window 当前桌面的背景图</h1><p>桌面壁纸位于：%APPDATA%\Microsoft\Windows\Themes 下<br>锁屏壁纸位于：%ProgramData%\Microsoft\Windows\SystemData\用户SID\ReadOnly</p>
 
         
       </div>
@@ -303,14 +308,17 @@
   
 </article>
 
- 
+
+
+
+
     </div>
     <div id="footer-wrapper">
       <footer id="footer">
   
   <div id="footer-info" class="inner">
     
-    &copy; 2023 youlxb2008<br>
+    &copy; 2024 youlxb2008<br>
     Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & Theme <a target="_blank" rel="noopener" href="https://github.com/saicaca/hexo-theme-vivia">Vivia</a>
   </div>
 </footer>
